@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCell</title>
+</head>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <header></header>
+    <main>
+        <h1>Bem vindo ao StudyCell!
+        </h1>
+
+        <p>clique no botão abaixo para criar uma nova célula de estudos.</p>
+        
+       <button type="button"  onclick="criarnovacelula()">criar nova célula</button> <!--botão onde
+       ao ser clicado, a função "criarnovacelula" cria uma nova célula de estudos com o comando vindo
+       do arquivo javascript-->
+       
+       
+      
+        <form id="materia" style="display: none;" onsubmit="salvarCelula(event)">
+       <!-- formulário identificado como matéria e seu estilo sendo definido como "none" para que após
+        o clique, um campo de texto dito como "Digite a matéria" acabe sendo exibido para digitar
+        a matéria que o usuário solicite.-->
+        
+      <input id="nomeMateria"type="text" placeholder="Digite a matéria"> <!--campo de texto mencionado anteriormente-->
+   
+      <input id="dataEstudo" type="date">
+      <button type="submit">Salvar</button> </form>
+          <div id="listadeCelulas"></div>
+          <button id="deletarCelula" type="reset" onclick="">Deletar Célula</button> 
+    </main>
+    <footer></footer>
+    <script></script>
+</body>
+</html>
